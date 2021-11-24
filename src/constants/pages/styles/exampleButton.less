@@ -1,0 +1,27 @@
+
+.button-box{
+
+  width: 50px;
+
+  padding: 15px;
+  margin-bottom: 5px;
+
+  text-align: center;
+
+  &.active{
+    background-color: black;
+    
+    .button-text{
+      color: white;
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+    border: 2px solid wheat;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = (_, argv) => {
   const config = {
     mode: argv.mode,
-    entry: path.resolve(__dirname, 'src', 'index.tsx'),
+    entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output: {
       path: path.resolve(__dirname, 'build'),
       filename: 'js/[name].js',
@@ -14,15 +14,19 @@ module.exports = (_, argv) => {
       publicPath: './'
     },
     resolve:{
-      extensions: ['.js', '.ts', '.tsx'],
+      extensions: ['.js', '.jsx'],
     },
     module: {
       rules:[
-        { test: /\.(tsx|ts)?$/, loader: 'ts-loader' },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /nodeModules/,
+          loader: 'babel-loader',          
+        },
         {
           test: /\.less$/,
           exclude: /\.module\.less$/,
-          use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader?url=false', 'less-loader'],
+          use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'less-loader'],
         },
         {          
           test: /\.(png|svg|jpg|jpeg|gif)$/,
@@ -47,7 +51,7 @@ module.exports = (_, argv) => {
       }),
       new HtmlPlugin({
         template: path.resolve(__dirname, 'public', 'index.html'),
-        favicon: path.resolve(__dirname, 'public', 'favicon.ico')
+        // favicon: path.resolve(__dirname, 'public', 'favicon.ico')
       }),
     ],
     optimization: {

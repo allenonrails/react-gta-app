@@ -1,33 +1,33 @@
 
 class EventManager {
-  private events: any;
+  events;
 
-  public constructor() {
+  constructor() {
     this.events = {};
   }
 
-  public addHandler(eventName: string, handler: any): void {
+  addHandler(eventName, handler) {
     if (eventName in this.events) this.events[eventName].push(handler);
     else this.events[eventName] = [handler];
   }
 
-  public removeHandler(eventName: string): void {
+  removeHandler(eventName) {
     if (eventName in this.events) {
       this.events[eventName] = null;
       delete this.events[eventName];
     }
   }
 
-  public trigger(eventName: string, args: string) {
+  trigger(eventName, args,) {
     try {
       var handlers = this.events[eventName];
-      handlers.forEach((handler: any) => handler(JSON.parse(args)));
-    } catch (e: any) {
+      handlers.forEach((handler) => handler(JSON.parse(args)));
+    } catch (e) {
       console.log(e.toString());
     }
   }
 }
 
-const eventManager = (window as any).EventManager || new EventManager();
-(window as any).EventManager = eventManager;
+const eventManager = window.EventManager || new EventManager();
+window.EventManager = eventManager;
 export default eventManager;
