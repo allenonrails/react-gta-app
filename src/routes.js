@@ -12,7 +12,45 @@ import CharacterSettings from "./constants/pages/CharacterSettings"
 import Main from "./constants/pages/Main"
 import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN } from "./utils/constants"
 
-export const authRoutes = [
+export const mainPagesRoutes = [
+  {
+    path: MAIN,
+    Component: Main,
+    linkName: "Главная"
+  },
+  {
+    path: SUBJECTS,
+    Component: Subjects,
+    linkName: "Мои предметы"
+  },
+  {
+    path: HISTORY,
+    Component: History,
+    linkName: "История"
+  },
+  {
+    path: TRANSPORT,
+    Component: Transport,
+    linkName: "Эксклюзивный транспорт"
+  },
+  {
+    path: VIRTUAL_CURRENCY,
+    Component: VirtualCurrency,
+    linkName: "Виртуальная валюта"
+  },
+  {
+    path: VIP,
+    Component: Vip,
+    linkName: "VIP Аккаунт"
+  },
+  {
+    path: CHARACTER_SETTINGS,
+    Component: CharacterSettings,
+    linkName: "Настройка персонажа"
+  },
+]
+
+export const profileRoutes = [
   {
     path: MAIN_STAT,
     Component: MainStat
@@ -33,36 +71,4 @@ export const authRoutes = [
     path: QUESTS,
     Component: Quests
   },
-  {
-    path: SUBJECTS,
-    Component: Subjects
-  },
-  {
-    path: HISTORY,
-    Component: History
-  },
-  {
-    path: TRANSPORT,
-    Component: Transport
-  },
-  {
-    path: VIRTUAL_CURRENCY,
-    Component: VirtualCurrency
-  },
-  {
-    path: VIP,
-    Component: Vip
-  },
-  {
-    path: CHARACTER_SETTINGS,
-    Component: CharacterSettings
-  },
-  {
-    path: MAIN,
-    Component: Main
-  },
-]
-
-export const publicRoutes = [
-
 ]

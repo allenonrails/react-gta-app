@@ -27,7 +27,15 @@ module.exports = (_, argv) => {
         {
           test: /\.less$/,
           exclude: /\.module\.less$/,
-          use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'less-loader'],
+          use: [{ loader: MiniCssExtractPlugin.loader }, 
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+              },
+            },
+            'less-loader'
+          ],
         },
         {          
           test: /\.(png|svg|jpg|jpeg|gif)$/,
@@ -37,7 +45,7 @@ module.exports = (_, argv) => {
               name: 'media/[name].[ext]'
             }
           }
-        }
+        },
       ],
     },
     plugins: [
