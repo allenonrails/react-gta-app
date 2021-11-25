@@ -1,0 +1,13 @@
+export const MAIN_STAT          = '/mainStat'
+export const PROPERTY           = '/property'
+export const APPEALS            = '/appeals'
+export const SETTINGS           = '/settings'
+export const QUESTS             = '/quests'
+export const SUBJECTS           = '/subjects'
+export const HISTORY            = '/history'
+export const TRANSPORT          = '/transport'
+export const VIRTUAL_CURRENCY   = '/virtualcurrency'
+export const VIP                = '/vip'
+export const CHARACTER_SETTINGS = '/charactersettings'
+export const MAIN               = '/'
+

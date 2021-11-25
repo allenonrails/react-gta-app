@@ -2,6 +2,7 @@ const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const historyApiFallback = require('connect-history-api-fallback');
 
 module.exports = (_, argv) => {
   const config = {
@@ -43,7 +44,10 @@ module.exports = (_, argv) => {
       new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
-        server: { baseDir: [path.resolve(__dirname, 'build')] }
+        server: { 
+          baseDir: [path.resolve(__dirname, 'build')],
+          middleware: [ historyApiFallback() ]
+        }
       }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].css',
