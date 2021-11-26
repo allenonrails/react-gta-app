@@ -1,16 +1,17 @@
-import MainStat from "./constants/pages/MainStat"
-import Property from "./constants/pages/Property"
-import Appeals from "./constants/pages/Appeals"
-import Settings from "./constants/pages/Settings"
-import Quests from "./constants/pages/Quests"
-import Subjects from "./constants/pages/Subjects"
-import History from "./constants/pages/History"
-import Transport from "./constants/pages/Transport"
-import VirtualCurrency from "./constants/pages/VirtualCurrency"
-import Vip from "./constants/pages/Vip"
-import CharacterSettings from "./constants/pages/CharacterSettings"
-import Main from "./constants/pages/Main"
-import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN } from "./utils/constants"
+import MainStat from "../pages/MainStat"
+import Property from "../pages/Property"
+import Appeals from "../pages/Appeals"
+import Settings from "../pages/Settings"
+import Quests from "../pages/Quests"
+import Subjects from "../pages/Subjects"
+import History from "../pages/History"
+import Transport from "../pages/Transport"
+import VirtualCurrency from "../pages/VirtualCurrency"
+import Vip from "../pages/Vip"
+import CharacterSettings from "../pages/CharacterSettings"
+import Main from "../pages/Main/Main"
+import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN, OTHER } from "./constants"
+import Other from "../pages/Other"
 
 export const mainPagesRoutes = [
   {
@@ -47,6 +48,11 @@ export const mainPagesRoutes = [
     path: CHARACTER_SETTINGS,
     Component: CharacterSettings,
     linkName: "Настройка персонажа"
+  },
+  {
+    path: OTHER,
+    Component: Other,
+    linkName: "Другое"
   },
 ]
 

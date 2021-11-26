@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom'
-import { mainPagesRoutes, profileRoutes } from '../routes';
-import { MAIN } from '../utils/constants';
+import { mainPagesRoutes, profileRoutes } from '../constants/routes';
+import { MAIN } from '../constants/constants';
 
 class AppRouter extends Component{
   render(){

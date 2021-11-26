@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../../main-styles/navbar/NavbarLink.less'
-
 import {withRouter, Link} from 'react-router-dom';
 
 class Navbarlink extends Component {

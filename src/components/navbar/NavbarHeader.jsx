@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import imgLogo from '../../images/logo.png'
 
-import '../../main-styles/navbar/NavbarHeader.less'
-
 class NavbarHeader extends Component {
   render() {
     return (

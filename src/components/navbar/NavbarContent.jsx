@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { mainPagesRoutes } from '../../routes'
+import { mainPagesRoutes } from '../../constants/routes'
 import Navbarlink from './NavbarLink'
 
 class NavbarContent extends Component {

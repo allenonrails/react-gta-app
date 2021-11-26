@@ -9,5 +9,6 @@ export const TRANSPORT          = '/transport'
 export const VIRTUAL_CURRENCY   = '/virtualcurrency'
 export const VIP                = '/vip'
 export const CHARACTER_SETTINGS = '/charactersettings'
+export const OTHER              = '/other'
 export const MAIN               = '/'
 
