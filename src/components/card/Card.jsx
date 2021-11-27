@@ -3,22 +3,21 @@ import React, { Component } from 'react';
 import LogoForBalance from '../../images/logo.png';
 
 import '../../main-styles/Card/main.less'
-import Cardbtn from './CardBtn';
 
 class Card extends Component {
   static defaultProps = {
     classes: []
   }
 
+  classes = this.props.customClasses.join(' ') + " card";
+
   render() {
-    let classes = this.props.customClasses.join(' ') + " card";
     return (
-      <div className={classes}>
-        <div className="card__image">
+      <div className={this.classes}>
+        <div data-url={this.props.image} className="card__image">
           <img src={this.props.image} alt={"image"} />
           <div className="card__buttons">
-            <Cardbtn action="get" text="Получить" />
-            <Cardbtn action="sell" text="Продать" />
+            {this.props.children}
           </div>
         </div>
       <div className="card__text">

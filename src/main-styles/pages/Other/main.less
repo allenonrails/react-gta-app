@@ -3,8 +3,7 @@
 .other__card {
   margin-bottom: 30px;
   .col(4, 20px);
-  .col-laptop(6, 20px);
-  @media screen and (max-width: @tablet) {
-    width: 100%;
+  &:not(:nth-child(3n)){
+    margin-right: 20px;
   }
 }

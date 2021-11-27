@@ -7,7 +7,9 @@ class NavbarContent extends Component {
     return (
       <ul className="navbar__content">  
         {mainPagesRoutes.map(({path, linkName}) =>
-          <Navbarlink to={path} menuText={linkName}/>
+          {if(linkName){
+            return <Navbarlink to={path} menuText={linkName}/>
+          }}
         )}
       </ul>
     )

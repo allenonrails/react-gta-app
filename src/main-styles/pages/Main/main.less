@@ -3,9 +3,8 @@
 .banner-wrap {
   &__block {
     .col(6, 20px);
-    @media screen and (max-width: @laptop) {
-      width: 100%;
-      margin-bottom: 30px;
+    &:first-child{
+      margin-right: 20px;
     }
   }
 }
@@ -64,15 +63,11 @@
   position: relative;
   border-radius: 5px;
   .col(4, 20px);
-  .col-laptop(6, 20px);
-  @media screen and (max-width: @laptop) {
-    margin-bottom: 30px;
-  }
-  @media screen and (max-width: @tablet) {
-    width: 100%;
-  }
   background-color: #121214;
   transition: .6s ease-out;
+  &:not(:last-child){
+    margin-right: 20px;
+  }
   &::before {
     content: '';
     position: absolute;

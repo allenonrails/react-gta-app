@@ -4,14 +4,15 @@ import Appeals from "../pages/Appeals"
 import Settings from "../pages/Settings"
 import Quests from "../pages/Quests"
 import Subjects from "../pages/Subjects"
-import History from "../pages/History"
-import Transport from "../pages/Transport"
+import History from "../pages/History/History"
+import Transport from "../pages/Transport/Transport"
 import VirtualCurrency from "../pages/VirtualCurrency"
 import Vip from "../pages/Vip"
 import CharacterSettings from "../pages/CharacterSettings"
 import Main from "../pages/Main/Main"
 import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN, OTHER } from "./constants"
 import Other from "../pages/Other"
+import TransportIdPage from "../pages/TransportIdPage"
 
 export const mainPagesRoutes = [
   {
@@ -54,6 +55,10 @@ export const mainPagesRoutes = [
     Component: Other,
     linkName: "Другое"
   },
+  {
+    path: TRANSPORT + '/:id',
+    Component: TransportIdPage
+  }
 ]
 
 export const profileRoutes = [
