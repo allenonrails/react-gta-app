@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../../components/card/Card';
 import Navbar from '../../components/navbar/Navbar';
+import Btnclose from '../../constants/buttons/BtnClose';
 import { TRANSPORT_ID } from '../../constants/constants';
 import { mainPagesRoutes } from '../../constants/routes';
 import CardImage from '../../images/smallBanner2.png';
@@ -34,6 +35,7 @@ class Transport extends Component {
       <div className="main-container">
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content transport__content row">
+        <Btnclose/>
           {this.cards.map(({id, title, price}) =>
               <TransportCard 
               headerText={this._user.balance} 

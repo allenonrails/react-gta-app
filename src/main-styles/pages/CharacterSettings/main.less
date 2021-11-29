@@ -1,0 +1,11 @@
+@import url(../../consts.less);
+
+.character__card {
+  .col(4, 20px);
+  &:not(:nth-child(3n+1)){
+    margin-right: 20px;
+  }
+  &::before{
+    display: none;
+  }
+}

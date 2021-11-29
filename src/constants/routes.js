@@ -6,13 +6,15 @@ import Quests from "../pages/Quests"
 import Subjects from "../pages/Subjects"
 import History from "../pages/History/History"
 import Transport from "../pages/Transport/Transport"
-import VirtualCurrency from "../pages/VirtualCurrency"
+import VirtualCurrency from "../pages/VirtualCurrency/VirtualCurrency"
 import Vip from "../pages/Vip"
 import CharacterSettings from "../pages/CharacterSettings"
 import Main from "../pages/Main/Main"
 import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN, OTHER } from "./constants"
 import Other from "../pages/Other"
 import TransportIdPage from "../pages/TransportIdPage"
+import VipIdPage from "../pages/VipIdPage"
+import Characteridpage from "../pages/CharacterIdPage"
 
 export const mainPagesRoutes = [
   {
@@ -58,6 +60,14 @@ export const mainPagesRoutes = [
   {
     path: TRANSPORT + '/:id',
     Component: TransportIdPage
+  },
+  {
+    path: VIP + '/:id',
+    Component: VipIdPage
+  },
+  {
+    path: CHARACTER_SETTINGS + '/:id',
+    Component: Characteridpage
   }
 ]
 

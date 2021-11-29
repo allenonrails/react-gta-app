@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter, Link } from 'react-router-dom';
 
 import LogoForBalance from '../../images/logo.png';
 
@@ -13,7 +14,7 @@ class Card extends Component {
 
   render() {
     return (
-      <div className={this.classes}>
+      <Link to={this.props.path} className={this.classes}>
         <div data-url={this.props.image} className="card__image">
           <img src={this.props.image} alt={"image"} />
           <div className="card__buttons">
@@ -27,9 +28,9 @@ class Card extends Component {
           <img src={LogoForBalance} alt={"LogoForBalance"} />
         </div>
       </div>
-      </div>
+      </Link>
     );
   }
 }
 
-export default Card;
+export default withRouter(Card);

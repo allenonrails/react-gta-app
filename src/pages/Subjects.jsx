@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from '../components/card/Card';
 import Cardbtn from '../components/card/CardBtn';
 import Navbar from '../components/navbar/Navbar';
+import Btnclose from '../constants/buttons/BtnClose';
 import { mainPagesRoutes } from '../constants/routes';
 
 import CardImage from '../images/smallBanner2.png'
@@ -40,6 +41,7 @@ class Subjects extends Component {
       <div className="main-container">
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content subjects__content row">
+          <Btnclose/>
           {this.cards.map(({title, price}) =>
             <Card image={CardImage} customClasses={["subjects__card"]} title={title} price={price}>
               <Cardbtn action="get" text="Получить" />
