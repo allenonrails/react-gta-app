@@ -31,9 +31,9 @@ class Other extends Component {
   render() {
     return (
       <div className="main-container">
+        <Btnclose/>
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content row">
-          <Btnclose/>
           {this.cards.map(({title, price}) =>
             <Card image={CardImage} customClasses={["other__card"]} title={title} price={price}/>
           )}

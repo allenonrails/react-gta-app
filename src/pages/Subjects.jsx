@@ -39,9 +39,9 @@ class Subjects extends Component {
   render() {
     return (
       <div className="main-container">
+        <Btnclose/>
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content subjects__content row">
-          <Btnclose/>
           {this.cards.map(({title, price}) =>
             <Card image={CardImage} customClasses={["subjects__card"]} title={title} price={price}>
               <Cardbtn action="get" text="Получить" />

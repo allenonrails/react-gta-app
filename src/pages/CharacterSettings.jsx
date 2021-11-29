@@ -31,9 +31,9 @@ class Charactersettings extends Component {
   render() {
     return (
       <div className="main-container">
+        <Btnclose/>
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content row">
-        <Btnclose/>
           {this.cards.map(({id, title, price}) =>
             <Card image={CardImage} path={CHARACTER_SETTINGS + '/' + id} customClasses={["character__card"]} title={title} price={price}>
             </Card>

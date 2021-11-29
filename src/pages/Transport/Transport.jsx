@@ -33,9 +33,9 @@ class Transport extends Component {
   render() {
     return (
       <div className="main-container">
+        <Btnclose/>
         <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content transport__content row">
-        <Btnclose/>
           {this.cards.map(({id, title, price}) =>
               <TransportCard 
               headerText={this._user.balance} 
