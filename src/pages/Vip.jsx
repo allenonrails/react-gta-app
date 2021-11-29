@@ -28,14 +28,11 @@ class Vip extends Component {
   ]
   render() {
     return (
-      <div className="main-container vip">
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
-        <div className="content vip__content row">
-          {this.cards.map(({id, title, price}) =>
-            <Card path={VIP + '/' + id} customClasses={["vip__card"]} title={title} price={price}>
-            </Card>
-          )}
-        </div>
+      <div className="content vip vip__content row">
+        {this.cards.map(({id, title, price}) =>
+          <Card path={VIP + '/' + id} customClasses={["vip__card"]} title={title} price={price}>
+          </Card>
+        )}
       </div>
     );
   }

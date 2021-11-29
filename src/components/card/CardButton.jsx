@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Cardbtn extends Component {
+class CardButton extends Component {
   actionClick(){
     return null
   }
@@ -14,4 +14,4 @@ class Cardbtn extends Component {
   }
 }
 
-export default Cardbtn;
+export default CardButton;

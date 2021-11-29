@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../../components/navbar/Navbar';
-import { mainPagesRoutes } from '../../constants/routes';
 import VirtualCurrencyCard from './VirtualCurrencyCard'
 import '../../main-styles/pages/VirtualCurrency/main.less' ;
-import Btnclose from '../../constants/buttons/BtnClose';
 
 class Virtualcurrency extends Component {
   _user = {
@@ -45,19 +42,15 @@ class Virtualcurrency extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
-        <div className="content currency__content row">
-        <Btnclose/>
-          {this.cards.map(({value, currency, description, price}) => 
-            <VirtualCurrencyCard
-              value={value}
-              currency={currency}
-              description={description}
-              price={price}
-            />
-          )}
-        </div>
+      <div className="content currency__content row">
+        {this.cards.map(({value, currency, description, price}) => 
+          <VirtualCurrencyCard
+            value={value}
+            currency={currency}
+            description={description}
+            price={price}
+          />
+        )}
       </div>
     );
   }

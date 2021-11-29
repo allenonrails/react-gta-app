@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
-import Navbar from '../components/navbar/Navbar';
+import React, { Component } from 'react';;
 import PageCard from '../components/PageCard/PageCard';
-import Btnclose from '../constants/buttons/BtnClose';
-import { mainPagesRoutes } from '../constants/routes';
 
 import Image from '../images/transport.png'
 
@@ -20,9 +17,7 @@ class TransportIdPage extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <Btnclose/>
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
+      <div className="content">
         <PageCard
           image={Image}
           count={this.cardInfo.count}

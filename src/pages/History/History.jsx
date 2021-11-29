@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import Navbar from '../../components/navbar/Navbar'
-import Btnclose from '../../constants/buttons/BtnClose'
-import { mainPagesRoutes } from '../../constants/routes'
 
 import '../../main-styles/pages/History/main.less'
 import Tabs from './Tabs'
@@ -144,12 +141,8 @@ export default class History extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <Btnclose/>
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
-        <div className="content history__content">
-          <Tabs data={this.data} />
-        </div>
+      <div className="content history__content">
+        <Tabs data={this.data} />
       </div>
     )
   }

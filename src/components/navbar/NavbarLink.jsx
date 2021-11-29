@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {withRouter, Link} from 'react-router-dom';
 
-class Navbarlink extends Component {
+class NavbarLink extends Component {
   render() {
     let isActive = this.props.location.pathname === this.props.to;
     let classNameItem = isActive ? 'navbar__item navbar__item-active' : 'navbar__item';
@@ -16,4 +16,4 @@ class Navbarlink extends Component {
   }
 }
 
-export default withRouter(Navbarlink);
+export default withRouter(NavbarLink);

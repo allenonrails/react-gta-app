@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from '../../components/navbar/Navbar';
-import { mainPagesRoutes } from '../../constants/routes';
 import Banner from './Banner';
 
 import '../../main-styles/pages/Main/main.less'
@@ -13,7 +11,6 @@ import SmallBanner2 from "../../images/smallBanner2.png"
 import SmallBanner3 from "../../images/smallBanner3.png"
 
 import Smallbanner from './SmallBanner';
-import Btnclose from '../../constants/buttons/BtnClose';
 
 class Main extends Component {
   _user = {
@@ -56,10 +53,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
         <div className="content">
-          <Btnclose/>
           <div className="banner__row banner-wrap row">
             {this.banners.big.map(({title, description, image, to}) => 
               <Banner
@@ -80,7 +74,6 @@ class Main extends Component {
             )}
           </div>
         </div>
-      </div>
     );
   }
 }

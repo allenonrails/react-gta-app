@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import Card from '../components/card/Card';
-import Navbar from '../components/navbar/Navbar';
-import { mainPagesRoutes } from '../constants/routes';
 
 import '../main-styles/pages/Other/main.less'
-
 import CardImage from '../images/smallBanner2.png'
-import Btnclose from '../constants/buttons/BtnClose';
 
 class Other extends Component {
   _user = {
@@ -30,14 +26,10 @@ class Other extends Component {
 
   render() {
     return (
-      <div className="main-container">
-        <Btnclose/>
-        <Navbar headerText={this._user.balance} linksRoutes={mainPagesRoutes}/>
-        <div className="content row">
-          {this.cards.map(({title, price}) =>
-            <Card image={CardImage} customClasses={["other__card"]} title={title} price={price}/>
-          )}
-        </div>
+      <div className="content row">
+        {this.cards.map(({title, price}) =>
+          <Card image={CardImage} customClasses={["other__card"]} title={title} price={price}/>
+        )}
       </div>
     );
   }

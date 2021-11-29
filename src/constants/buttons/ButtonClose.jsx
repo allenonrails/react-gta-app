@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../../main-styles/buttons/BtnClose.less';
+import '../../main-styles/buttons/ButtonClose.less';
 
 class Btnclose extends Component {
   render() {
