@@ -5,10 +5,6 @@ import '../main-styles/pages/Other/main.less'
 import CardImage from '../images/smallBanner2.png'
 
 class Other extends Component {
-  _user = {
-    balance: 1200
-  }
-
   cards = [
     {
       title: "Маска",
