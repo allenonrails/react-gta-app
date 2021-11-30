@@ -6,10 +6,6 @@ import CardImage from '../images/smallBanner2.png'
 import '../main-styles/pages/Subjects/main.less'
 
 class Subjects extends Component {
-  _user = {
-    balance: 1200
-  }
-
   cards = [
     {
       title: "Маска",

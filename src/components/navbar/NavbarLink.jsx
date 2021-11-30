@@ -3,7 +3,8 @@ import {withRouter, Link} from 'react-router-dom';
 
 class NavbarLink extends Component {
   render() {
-    let isActive = this.props.location.pathname === this.props.to;
+    let regexp = /^(\/?[A-z0-9]*)/;
+    let isActive = this.props.location.pathname.match(regexp)[0] === this.props.to;
     let classNameItem = isActive ? 'navbar__item navbar__item-active' : 'navbar__item';
 
     return (    

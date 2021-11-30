@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import '../../main-styles/buttons/ButtonClose.less';
 
-class Btnclose extends Component {
+class BtnClose extends Component {
   render() {
     return (
       <button className="close"></button>
@@ -10,4 +10,4 @@ class Btnclose extends Component {
   }
 }
 
-export default Btnclose;
+export default BtnClose;

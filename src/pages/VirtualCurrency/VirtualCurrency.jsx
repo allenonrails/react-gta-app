@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import VirtualCurrencyCard from './VirtualCurrencyCard'
 import '../../main-styles/pages/VirtualCurrency/main.less' ;
 
-class Virtualcurrency extends Component {
-  _user = {
-    balance: 1200
-  }
-
+class VirtualCurrency extends Component {
   cards = [
     {
       value: 10_000,
@@ -56,4 +52,4 @@ class Virtualcurrency extends Component {
   }
 }
 
-export default Virtualcurrency;
+export default VirtualCurrency;

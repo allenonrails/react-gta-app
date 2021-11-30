@@ -3,7 +3,7 @@ import PageCard from '../components/PageCard/PageCard';
 
 import Image from '../images/vip.png'
 
-class Characteridpage extends Component {
+class CharacterIdPage extends Component {
   cardInfo = {
     id: 1,
     count: 2,
@@ -24,4 +24,4 @@ class Characteridpage extends Component {
   }
 }
 
-export default Characteridpage;
+export default CharacterIdPage;

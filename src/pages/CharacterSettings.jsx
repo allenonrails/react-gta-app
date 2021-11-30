@@ -4,7 +4,7 @@ import { CHARACTER_SETTINGS } from '../constants/constants';
 import CardImage from '../images/smallBanner2.png'
 import '../main-styles/pages/CharacterSettings/main.less';
 
-class Charactersettings extends Component {
+class CharacterSettings extends Component {
   cards = [
     {
       id: 1,
@@ -34,4 +34,4 @@ class Charactersettings extends Component {
   }
 }
 
-export default Charactersettings;
+export default CharacterSettings;

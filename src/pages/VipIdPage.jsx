@@ -3,7 +3,7 @@ import PageCard from '../components/PageCard/PageCard';
 
 import Image from '../images/vip.png'
 
-class Vipidpage extends Component {
+class VipIdPage extends Component {
   cardInfo = {
     id: 1,
     count: 2,
@@ -24,4 +24,4 @@ class Vipidpage extends Component {
   }
 }
 
-export default Vipidpage;
+export default VipIdPage;

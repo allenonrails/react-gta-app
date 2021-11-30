@@ -6,9 +6,6 @@ import { mainPagesRoutes } from '../constants/routes';
 import '../main-styles/pages/Vip/main.less';
 
 class Vip extends Component {
-  _user = {
-    balance: 1200
-  }
   cards = [
     {
       id: 1,
