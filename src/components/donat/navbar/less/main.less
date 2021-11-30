@@ -1,0 +1,57 @@
+@import url(../../../../main-styles/consts.less);
+
+.navbar {
+  display: block;
+  .col(3, 0px);
+  display: block;
+  background-color: rgba(18, 18, 20, 0.8);
+  min-height: 130vh;
+  &__header {
+    text-align: center;
+    padding: 24px 38px;
+  }
+  &__logo img{
+    display: block;
+    margin: 0 auto;
+  }
+  &__balance {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+  }
+  &__balance img {
+    width: 28px;
+    margin-right: 10px;
+  }
+  &__balance-text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+  // items
+  &__item {
+    padding: 14px 0;
+    list-style: none;
+    transition: .6s ease-in-out;
+    &-active {
+      background-color: #FF3929;
+    }
+    &:hover {
+      background-color: #d82114;
+    }
+  }
+  
+  &__link {
+    display: block;
+    max-width: 150px;
+    margin-left: 38px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+

@@ -1,0 +1,27 @@
+@import url(../../../../../main-styles/consts.less);
+
+.vip {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 663px;
+    .col(4, 40px);
+    &:not(:last-child){
+      margin-right: 40px;
+    }
+  }
+  .card{
+    &::before {
+      display: none;
+    }
+    &__image {
+      height: 100%;
+      flex-grow: 1;
+    }
+    &__text {
+      background-color: #FF3929;
+      max-height: 90px;
+      flex-grow: 0;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 
-import LogoForBalance from '../../images/logo.png';
-
-import '../../main-styles/Card/main.less'
+import Logo from '../../images/logo.png';
+import './less/main.less'
 
 class Card extends Component {
   static defaultProps = {
@@ -25,7 +24,7 @@ class Card extends Component {
         <h3 className="card__title">{this.props.title}</h3>
         <div className="card__balance">
           <span className="card__price">{this.props.price}</span>
-          <img src={LogoForBalance} alt={"LogoForBalance"} />
+          <img src={Logo} alt={"LogoForBalance"} />
         </div>
       </div>
       </Link>

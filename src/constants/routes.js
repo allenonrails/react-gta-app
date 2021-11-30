@@ -1,22 +1,17 @@
-import MainStat from "../pages/MainStat"
-import Property from "../pages/Property"
-import Appeals from "../pages/Appeals"
-import Settings from "../pages/Settings"
-import Quests from "../pages/Quests"
-import Subjects from "../pages/Subjects"
-import History from "../pages/History/History"
-import Transport from "../pages/Transport/Transport"
-import VirtualCurrency from "../pages/VirtualCurrency/VirtualCurrency"
-import Vip from "../pages/Vip"
-import CharacterSettings from "../pages/CharacterSettings"
-import Main from "../pages/Main/Main"
-import { APPEALS, HISTORY, MAIN_STAT, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY, CHARACTER_SETTINGS, MAIN, OTHER } from "./constants"
-import Other from "../pages/Other"
-import TransportIdPage from "../pages/TransportIdPage"
-import VipIdPage from "../pages/VipIdPage"
-import Characteridpage from "../pages/CharacterIdPage"
+import { CHARACTER_SETTINGS, HISTORY, MAIN, OTHER, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
+import Main from '../components/donat/pages/Main/Main';
+import Subjects from '../components/donat/pages/Subjects/Subjects';
+import History from '../components/donat/pages/History/History';
+import Transport from '../components/donat/pages/Transport/Transport';
+import VirtualCurrency from '../components/donat/pages/VirtualCurrency/VirtualCurrency';
+import Vip from '../components/donat/pages/Vip/Vip';
+import CharacterSettings from '../components/donat/pages/CharacterSettings/CharacterSettings';
+import Other from '../components/donat/pages/Other/Other';
+import TransportIdPage from '../components/donat/pages/TransportIdPage/TransportIdPage';
+import VipIdPage from '../components/donat/pages/VipIdPage/VipIdPage';
+import CharacterIdPage from '../components/donat/pages/CharacterIdPage/CharacterIdPage';
 
-export const mainPagesRoutes = [
+export const donatRoutes = [
   {
     path: MAIN,
     Component: Main,
@@ -67,29 +62,6 @@ export const mainPagesRoutes = [
   },
   {
     path: CHARACTER_SETTINGS + '/:id',
-    Component: Characteridpage
+    Component: CharacterIdPage
   }
-]
-
-export const profileRoutes = [
-  {
-    path: MAIN_STAT,
-    Component: MainStat
-  },
-  {
-    path: APPEALS,
-    Component: Appeals
-  },
-  {
-    path: PROPERTY,
-    Component: Property
-  },
-  {
-    path: SETTINGS,
-    Component: Settings
-  },
-  {
-    path: QUESTS,
-    Component: Quests
-  },
 ]
