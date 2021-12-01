@@ -1,4 +1,4 @@
-import { CHARACTER_SETTINGS, HISTORY, MAIN, OTHER, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
+import { APPEALS, CHARACTER_SETTINGS, HISTORY, MAIN, MAIN_STAT, OTHER, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
 import Main from '../components/donat/pages/Main/Main';
 import Subjects from '../components/donat/pages/Subjects/Subjects';
 import History from '../components/donat/pages/History/History';
@@ -10,6 +10,12 @@ import Other from '../components/donat/pages/Other/Other';
 import TransportIdPage from '../components/donat/pages/TransportIdPage/TransportIdPage';
 import VipIdPage from '../components/donat/pages/VipIdPage/VipIdPage';
 import CharacterIdPage from '../components/donat/pages/CharacterIdPage/CharacterIdPage';
+
+import MainStat from '../components/profile/pages/MainStat/MainStat'
+import Property from '../components/profile/pages/Property/Property'
+import Appeals from '../components/profile/pages/Appeals/Appeals'
+import Settings from '../components/profile/pages/Settings/Settings'
+import Quests from '../components/profile/pages/Quests/Quests'
 
 export const donatRoutes = [
   {
@@ -64,4 +70,33 @@ export const donatRoutes = [
     path: CHARACTER_SETTINGS + '/:id',
     Component: CharacterIdPage
   }
+];
+
+
+export const profileRoutes = [
+  {
+    path: MAIN_STAT,
+    Component: MainStat,
+    linkName: "Общее"
+  },
+  {
+    path: PROPERTY,
+    Component: Property,
+    linkName: "Имущество"
+  },
+  {
+    path: APPEALS,
+    Component: Appeals,
+    linkName: "Обращения"
+  },
+  {
+    path: SETTINGS,
+    Component: Settings,
+    linkName: "Настройки"
+  },
+  {
+    path: QUESTS,
+    Component: Quests,
+    linkName: "Квесты"
+  },
 ]

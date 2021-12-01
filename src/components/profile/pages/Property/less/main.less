@@ -1,0 +1,18 @@
+.property {
+  &__tab-name{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 11px;
+    border-bottom: 5px solid transparent;
+    transition: .6s ease-out;
+    &:not(:first-child){
+      margin-left: 32px;
+    }
+    &-active, &:hover {
+      border-color: #FF2D17;
+    }
+  }
+}

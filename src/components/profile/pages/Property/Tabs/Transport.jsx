@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Property extends Component {
+class Transport extends Component {
   render() {
     return (
       <div>
-        Property
+        3
       </div>
     );
   }
 }
 
-export default Property;
+export default Transport;

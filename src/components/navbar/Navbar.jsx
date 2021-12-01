@@ -5,14 +5,15 @@ import NavbarContent from './NavbarContent'
 import './less/main.less'
 
 class Navbar extends Component {
-  _user = {
-    balance: 1355
+  static defaultProps = {
+    classes: []
   }
+
+  classes = this.props.customClasses.join(' ') + " navbar";
   render() {
     return (
-      <navbar className="navbar">
-        <NavbarHeader headerText={this._user.balance}/>
-        <NavbarContent linksRoutes={this.props.donutRoutes}/>
+      <navbar className={this.classes}>
+        {this.props.children}
       </navbar>
     )
   }

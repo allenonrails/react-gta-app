@@ -4,10 +4,6 @@ import './less/main.less'
 import Tabs from './Tabs'
 
 export default class History extends Component {
-  _user = {
-    balance: 1200
-  }
-
   data = {
     "Начисления": {
       rowNames: [

@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import { donatRoutes } from '../../../constants/routes'
 import NavbarLink from './NavbarLink'
 
 class NavbarContent extends Component {
   render() {
     return (
       <ul className="navbar__content">  
-        {donatRoutes.map(({path, linkName}) =>
+        {this.props.linksRoutes.map(({path, linkName}) =>
           {if(linkName){
             return <NavbarLink to={path} menuText={linkName}/>
           }}
         )}
+        {this.props.children}
       </ul>
     )
   }

@@ -1,0 +1,112 @@
+.main {
+  color: #fff;
+  &__wrap {
+    justify-content: space-between;
+    align-items: flex-start
+  }
+  &-card{
+    padding: 9px 12px;
+    background-color: #121214;
+    border-radius: 3px;
+    &__title {
+      margin-bottom: 36px;
+      font-size: 16px;
+    }
+  }
+  &__btn {
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 15px 28px;
+    color: #fff;
+  }
+  &__info {
+    margin-right: 63px;
+    width: 499px;
+  }
+  &-info {
+    &__block {
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  &__finance {
+    width: 348px;
+  }
+  &-finance {
+    font-size: 14px;
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:first-child){
+        margin-top: 43px;
+      }
+    }
+    &__title {
+      margin-bottom: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      object {
+        margin-right: 9px;
+      }
+    }
+    &__block:not(:nth-child(2n)){
+      margin-right: 63px;
+    }
+    &__btn {
+      background: linear-gradient(270deg, #2BA068 24.48%, #3CDB8F 100%);
+      &:hover {
+        background: linear-gradient(270deg, darken(#2BA068,3%) 24.48%, darken(#3CDB8F, 4%) 100%);
+      }
+    }
+  }
+  &__buttons {
+    margin-top: -50px;
+    display: flex;
+    justify-content: flex-end;
+    .main__btn {
+      background-color: transparent;
+    }
+  }
+  &__btn-red{
+    border: 1px solid #ff453a;
+    margin-right: 105px;
+    transition: .5s ease-in-out;
+    &:hover{
+      background-color: #ff453a;
+    }
+  }
+  &__btn-blue {
+    border: 1px solid #18c7ff;
+    transition: .5s ease-in-out;
+    &:hover{
+      background-color: #18c7ff;
+    }
+  }
+  &-reputation {
+    font-size: 14px;
+    height: 303px;
+    overflow: scroll;
+    margin-top: 37px;
+    &__wrap {
+      display: flex;
+    }
+    &__stat {
+      flex-grow: 1;
+      &:first-child{
+        margin-right: 60px;
+      }
+    }
+    .reputation-stat__block {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

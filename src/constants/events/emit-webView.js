@@ -8,7 +8,14 @@ const EmitWebView = {
   VipIdPage         : 'WebView:VipIdPage',
   CharacterSettings : 'WebView:CharacterSettings',
   Other             : 'WebView:Other',
-  CharacterIdPage   : 'WebView:CharacterIdPage'
+  CharacterIdPage   : 'WebView:CharacterIdPage',
+
+  // profile
+  MainStat          : 'WebView:MainStat',
+  Appeals           : 'WebView:Appeals',
+  Property          : 'WebView:Property',
+  Quests            : 'WebView:Quests',
+  Settings          : 'WebView:Settings'
 }
 
 export default EmitWebView;

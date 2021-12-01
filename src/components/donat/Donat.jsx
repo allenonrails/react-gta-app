@@ -4,7 +4,9 @@ import { MAIN } from '../../constants/constants';
 import EmitWebView from '../../constants/events/emit-webView';
 import { donatRoutes } from '../../constants/routes';
 import EventManager from '../../EventManager'
-import Navbar from './navbar/Navbar'
+import Navbar from '../navbar/Navbar'
+import NavbarHeader from '../navbar/NavbarHeader'
+import NavbarContent from '../navbar/NavbarContent'
 import ButtonClose from '../../constants/buttons/ButtonClose/ButtonClose'
 import './less/main.less'
 
@@ -12,9 +14,13 @@ class Donat extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true,
-      path: '/'
+      show: false,
+      path: '/donat'
     }
+  }
+
+  _user = {
+    balance: 1355
   }
 
   componentDidMount() {
@@ -38,7 +44,10 @@ class Donat extends Component {
       <BrowserRouter>
       <div className="main-container">
         <ButtonClose/>
-        <Navbar linksRoutes={donatRoutes}/>
+        <Navbar customClasses={['']} linksRoutes={donatRoutes}>
+          <NavbarHeader headerText={this._user.balance}/>
+          <NavbarContent linksRoutes={this.props.donutRoutes}/>
+        </Navbar>
         <Switch>
           {donatRoutes.map(({path, Component}) =>
             <Route key={path} path={path} component={Component} exact/>
