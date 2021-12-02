@@ -1,4 +1,4 @@
-import { APPEALS, CHARACTER_SETTINGS, HISTORY, MAIN, MAIN_STAT, OTHER, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
+import { APPEALS, CHARACTER_SETTINGS, HISTORY, MAIN, MAIN_STAT, OTHER, PROFILE_SETTINGS, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
 import Main from '../components/donat/pages/Main/Main';
 import Subjects from '../components/donat/pages/Subjects/Subjects';
 import History from '../components/donat/pages/History/History';
@@ -90,7 +90,7 @@ export const profileRoutes = [
     linkName: "Обращения"
   },
   {
-    path: SETTINGS,
+    path: PROFILE_SETTINGS,
     Component: Settings,
     linkName: "Настройки"
   },

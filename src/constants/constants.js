@@ -15,3 +15,4 @@ export const QUESTS             = `/quests`
 export const PROPERTY           = `/property`
 export const APPEALS            = `/appeals`
 export const OTHERMAIN          = `/other`
+export const PROFILE_SETTINGS   = `/settings`

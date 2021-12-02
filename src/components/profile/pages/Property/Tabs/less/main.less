@@ -1,10 +1,100 @@
-.property-tab {
-  padding: 20px 28px;
-  width: 865px;
-  background-color: #121214;
-  border-radius: 3px;
-  &__image {
-    overflow: hidden;
-    border-radius: 20px;
+.property {
+  &-tab {
+    margin-top: 42px;
+    height: 559px;
+    overflow: scroll;
+    scrollbar-color: #FF2D17 transparent;
+    color: #FFF;
+    padding: 20px 28px;
+    width: 865px;
+    background-color: #121214;
+    border-radius: 3px;
+    &__car-wrap {
+      display: flex;
+    }
+    &_-type {
+      margin-top: 14px;
+    }
+    &__car-block {
+      margin-right: 136px;
+      .prop {
+        margin-bottom: 7px;
+      }
+    }
+    &-name {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      .icon{
+        position: absolute;
+        z-index: 30;
+        bottom: 10px;
+        left: 25px;
+        width: 45px;
+        height: 45px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        &-green {
+          background: rgba(78, 227, 129, 0.4);
+          border: 1px solid #4EE381;
+        }
+        &-red {
+          background: rgba(237, 51, 118, 0.4);
+          border: 1px solid #D80034;
+        }
+        &-blue {
+          border: 1px solid #007DD8;
+          background: rgba(51, 126, 237, 0.4);
+        }
+      }
+    }
+    &__title {
+      margin-top: 24px;
+      margin-bottom: 90px;
+      font-size: 28px;
+    }
+  }
+  &-block, &-gos {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    .prop {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 14px;
+      }
+    }
+  }
+  &-gos {
+    margin-top: 90px;
+  }
+  &-gps {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 51px;
+    padding: 15px 30px;
+    font-size: 14px;
+    display: flex;
+    border: 0;
+    background-color: #0F0F11;
+    border-radius: 3px;
+    color: #BBBBBB;
+    transition: .5s ease-in;
+    img{
+      margin-right: 14px;
+    }
+    &:hover {
+      background-color: darken(#0F0F11, 5%);
+    }
   }
 }

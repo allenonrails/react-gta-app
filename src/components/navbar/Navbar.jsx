@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import NavbarHeader from './NavbarHeader'
-import NavbarContent from './NavbarContent'
 
 import './less/main.less'
 

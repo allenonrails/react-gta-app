@@ -3,62 +3,55 @@ import './less/main.less'
 import Home from './Tabs/Home'
 import Business from './Tabs/Business'
 import Transport from './Tabs/Transport'
-import { BrowserRouter as Router, Route, withRouter, Redirect } from 'react-router';
-import { Link } from 'react-router-dom';
+import { Route, withRouter } from 'react-router';
 
 class Property extends Component {
   state = {
-    show: true,
-    path: '/property',
-    active: '/property'
+    active: 0
   }
 
   dataTabs = [
     {
+      id: 0,
       tabName: 'Дом',
-      path: `${this.props.location.pathname}`,
       tabComponent: Home
     },
     {
+      id: 1,
       tabName: 'Бизнес и др.',
-      path: `${this.props.location.pathname}/business`,
       tabComponent: Business
     },
     {
+      id: 2,
       tabName: 'Транспорт',
-      path: `${this.props.location.pathname}/transport`,
       tabComponent: Transport
     }
   ]
 
   btnClickEvent = (e) => {
-    
     this.setState({
-      active: +e.target.dataset.path
+      active: +e.target.dataset.id
     })
   }
 
   render() {
-    let {active} = this.state;
     return (
       <div className="property">
         <div className="property__header">
-          {this.dataTabs.map(({tabName, path}) => 
-            <Link
-            to={path} 
-            data-path={path} 
-            className={path == active ? "property__tab-name property__tab-name-active" : 'property__tab-name'}
+          {this.dataTabs.map(({tabName, id}) => 
+            <span
+            data-id={id} 
+            className={id === this.state.active ? "property__tab-name property__tab-name-active" : 'property__tab-name'}
             onClick={this.btnClickEvent}
             >
               {tabName}
-            </Link>
+            </span>
           )}
         </div>
         <div className="property__container">
-          {this.dataTabs.map(({path, tabComponent}) =>
-            <Route exact path={path} component={tabComponent} />
-          )}
-          <Redirect to={this.state.path} push />
+          <Home active={0 === this.state.active}/>
+          <Business active={1 === this.state.active}/>
+          <Transport active={2 === this.state.active}/>
         </div>
       </div>
     );
