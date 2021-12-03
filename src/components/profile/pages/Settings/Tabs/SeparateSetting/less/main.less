@@ -1,3 +1,36 @@
+.settings-separate {
+  overflow: scroll;
+  scrollbar-color: #FF2D17 transparent;
+  height: 574px;
+  display: flex;
+  flex-wrap: wrap;
+  &__block {
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    align-items:  center;
+    margin-bottom: 14px;
+    padding: 10px;
+    width: calc(100% / 12 * 6 - 17px);
+    background: #121214;
+    border-radius: 5px;
+    color: #fff;
+    &:not(:nth-child(2n)){
+      margin-right: 17px;
+    }
+  }
+  &__image {
+    margin-right: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 50px;
+    background: #0A0A0B;
+    border-radius: 5px;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Donat from './components/donat/Donat';
+import Donate from './components/donate/Donate';
 
 import './main-styles/main.less';
 import './main-styles/adaptive.less';
@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <div className="box" id="box">
-        <Donat />
+        <Donate />
         <Profile />
       </div>
     </React.Fragment>

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 
-import Main from './Tabs/Main/Main'
-import Interface from './Tabs/Interface'
-import VoiceChat from './Tabs/VoiceChat'
-import TextChat from './Tabs/TextChat'
-import DesignMenu from './Tabs/DesignMenu'
-import Keyboard from './Tabs/Keyboard/Keyboard'
+import SettingsPage from './Tabs/SettingsPage/SettingsPage'
+import SeparateSetting from './Tabs/SeparateSetting/SeparateSetting';
 
 import './less/main.less'
 
@@ -16,34 +12,182 @@ class Settings extends Component {
 
   dataTabs = [
     {
-      id: 0,
       tabName: 'Основное',
     },
     {
-      id: 1,
       tabName: 'Интерфейс',
+      data: {
+        switcher: [
+          "Включить параметр",
+          "Включить параметр",
+          "Включить параметр",
+          "Включить параметр",
+          "Включить параметр",
+          "Включить параметр"
+        ],
+        slider: {
+          textSlider: 'Что-то тут точно будет',
+          slides: [
+            "Парметр 1",
+            "Параметр 2 ",
+            "Другое"
+          ]
+        }
+      }
     },
     {
-      id: 2,
       tabName: 'Голосовой чат',
+      data: {
+        blocks: {
+          'A': 'SayHello',
+          'B': 'Voice Chat',
+          'С': 'SayHello',
+          'D': 'Voice Chat',
+          'DD': 'SayHello',
+          'VV': 'Voice Chat',
+          'AA': 'SayHello',
+          'WW': 'Voice Chat',
+          'AZZ': 'SayHello',
+          'ZZ': 'Voice Chat',
+          'Z': 'SayHello',
+          'ZZZ': 'Voice Chat',
+          'q': 'SayHello',
+          'Q1': 'Voice Chat',
+          'A22': 'SayHello',
+          'B3': 'Voice Chat',
+          '4A': 'SayHello',
+          'B44': 'Voice Chat',
+          '4A4': 'SayHello',
+          'B88': 'Voice Chat',
+          'A88': 'SayHello',
+          '99B': 'Voice Chat',
+          '88A': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aa': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aasa': 'SayHello',
+          'aB': 'Voice Chat',
+          '<': 'SayHello',
+          'Ba': 'Voice Chat'
+        }
+      }
     },
     {
-      id: 3,
       tabName: 'Текстовый чат',
+      data: {
+        blocks: {
+          'A': 'SayHello',
+          'B': 'Voice Chat',
+          'С': 'SayHello',
+          'D': 'Voice Chat',
+          'DD': 'SayHello',
+          'VV': 'Voice Chat',
+          'AA': 'SayHello',
+          'WW': 'Voice Chat',
+          'AZZ': 'SayHello',
+          'ZZ': 'Voice Chat',
+          'Z': 'SayHello',
+          'ZZZ': 'Voice Chat',
+          'q': 'SayHello',
+          'Q1': 'Voice Chat',
+          'A22': 'SayHello',
+          'B3': 'Voice Chat',
+          '4A': 'SayHello',
+          'B44': 'Voice Chat',
+          '4A4': 'SayHello',
+          'B88': 'Voice Chat',
+          'A88': 'SayHello',
+          '99B': 'Voice Chat',
+          '88A': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aa': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aasa': 'SayHello',
+          'aB': 'Voice Chat',
+          '<': 'SayHello',
+          'Ba': 'Voice Chat'
+        }
+      }
     },
     {
-      id: 4,
       tabName: 'Дизайн меню',
+      data: {
+        blocks: {
+          'A': 'SayHello',
+          'B': 'Voice Chat',
+          'С': 'SayHello',
+          'D': 'Voice Chat',
+          'DD': 'SayHello',
+          'VV': 'Voice Chat',
+          'AA': 'SayHello',
+          'WW': 'Voice Chat',
+          'AZZ': 'SayHello',
+          'ZZ': 'Voice Chat',
+          'Z': 'SayHello',
+          'ZZZ': 'Voice Chat',
+          'q': 'SayHello',
+          'Q1': 'Voice Chat',
+          'A22': 'SayHello',
+          'B3': 'Voice Chat',
+          '4A': 'SayHello',
+          'B44': 'Voice Chat',
+          '4A4': 'SayHello',
+          'B88': 'Voice Chat',
+          'A88': 'SayHello',
+          '99B': 'Voice Chat',
+          '88A': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aa': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aasa': 'SayHello',
+          'aB': 'Voice Chat',
+          '<': 'SayHello',
+          'Ba': 'Voice Chat'
+        }
+      }
     },
     {
-      id: 5,
       tabName: 'Назначение клавишь',
+      data: {
+        blocks: {
+          'A': 'SayHello',
+          'B': 'Voice Chat',
+          'С': 'SayHello',
+          'D': 'Voice Chat',
+          'DD': 'SayHello',
+          'VV': 'Voice Chat',
+          'AA': 'SayHello',
+          'WW': 'Voice Chat',
+          'AZZ': 'SayHello',
+          'ZZ': 'Voice Chat',
+          'Z': 'SayHello',
+          'ZZZ': 'Voice Chat',
+          'q': 'SayHello',
+          'Q1': 'Voice Chat',
+          'A22': 'SayHello',
+          'B3': 'Voice Chat',
+          '4A': 'SayHello',
+          'B44': 'Voice Chat',
+          '4A4': 'SayHello',
+          'B88': 'Voice Chat',
+          'A88': 'SayHello',
+          '99B': 'Voice Chat',
+          '88A': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aa': 'SayHello',
+          'Ba': 'Voice Chat',
+          'Aasa': 'SayHello',
+          'aB': 'Voice Chat',
+          '<': 'SayHello',
+          'Ba': 'Voice Chat'
+        }
+      }
     },
   ]
 
   btnClickEvent = (e) => {
     this.setState({
-      active: +e.target.dataset.id
+      active: +e.target.dataset.index
     })
   }
 
@@ -51,23 +195,24 @@ class Settings extends Component {
     return (
       <div className="settings">
         <div className="settings__header">
-          {this.dataTabs.map(({tabName, id}) => 
+          {this.dataTabs.map((el, i) =>
             <span
-            data-id={id} 
-            className={id === this.state.active ? "settings__tab-name settings__tab-name-active" : 'settings__tab-name'}
-            onClick={this.btnClickEvent}
+              data-index={i}
+              className={i === this.state.active ? "settings__tab-name settings__tab-name-active" : 'settings__tab-name'}
+              onClick={this.btnClickEvent}
             >
-              {tabName}
+              {el.tabName}
             </span>
           )}
         </div>
         <div className="settings__container">
-          <Main active={0 === this.state.active}/>
-          <Interface active={1 === this.state.active}/>
-          <VoiceChat active={2 === this.state.active}/>
-          <TextChat active={3 === this.state.active}/>
-          <DesignMenu active={4 === this.state.active}/>
-          <Keyboard active={5 === this.state.active}/>
+          <SettingsPage active={0 === this.state.active} />
+          {this.dataTabs.slice(1).map((el, i) => {
+            return (
+              <SeparateSetting dataSetting={el} active={i + 1 === this.state.active} />
+            )
+          })}
+
         </div>
       </div>
     );

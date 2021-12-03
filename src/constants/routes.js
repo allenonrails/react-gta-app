@@ -1,15 +1,15 @@
 import { APPEALS, CHARACTER_SETTINGS, HISTORY, MAIN, MAIN_STAT, OTHER, PROFILE_SETTINGS, PROPERTY, QUESTS, SETTINGS, SUBJECTS, TRANSPORT, VIP, VIRTUAL_CURRENCY } from "./constants";
-import Main from '../components/donat/pages/Main/Main';
-import Subjects from '../components/donat/pages/Subjects/Subjects';
-import History from '../components/donat/pages/History/History';
-import Transport from '../components/donat/pages/Transport/Transport';
-import VirtualCurrency from '../components/donat/pages/VirtualCurrency/VirtualCurrency';
-import Vip from '../components/donat/pages/Vip/Vip';
-import CharacterSettings from '../components/donat/pages/CharacterSettings/CharacterSettings';
-import Other from '../components/donat/pages/Other/Other';
-import TransportIdPage from '../components/donat/pages/TransportIdPage/TransportIdPage';
-import VipIdPage from '../components/donat/pages/VipIdPage/VipIdPage';
-import CharacterIdPage from '../components/donat/pages/CharacterIdPage/CharacterIdPage';
+import Main from '../components/donate/pages/Main/Main';
+import Subjects from '../components/donate/pages/Subjects/Subjects';
+import History from '../components/donate/pages/History/History';
+import Transport from '../components/donate/pages/Transport/Transport';
+import VirtualCurrency from '../components/donate/pages/VirtualCurrency/VirtualCurrency';
+import Vip from '../components/donate/pages/Vip/Vip';
+import CharacterSettings from '../components/donate/pages/CharacterSettings/CharacterSettings';
+import Other from '../components/donate/pages/Other/Other';
+import TransportIdPage from '../components/donate/pages/TransportIdPage/TransportIdPage';
+import VipIdPage from '../components/donate/pages/VipIdPage/VipIdPage';
+import CharacterIdPage from '../components/donate/pages/CharacterIdPage/CharacterIdPage';
 
 import MainStat from '../components/profile/pages/MainStat/MainStat'
 import Property from '../components/profile/pages/Property/Property'
@@ -17,7 +17,7 @@ import Appeals from '../components/profile/pages/Appeals/Appeals'
 import Settings from '../components/profile/pages/Settings/Settings'
 import Quests from '../components/profile/pages/Quests/Quests'
 
-export const donatRoutes = [
+export const donateRoutes = [
   {
     path: MAIN,
     Component: Main,

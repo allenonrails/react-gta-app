@@ -23,30 +23,30 @@ class Main extends Component {
         title: "Кейсы Imperium Life",
         description: "Открывая кейсы вы можете получить деньги, Imperium Coins, VIP статус, уникальные автомобили и многое другое",
         image: Banner1,
-        to: 'donat/transport'
+        to: 'donate/transport'
       },
       {
         title: "Транспорт",
         description: "Выбирай любой понравившийся транспорт из реальной жизни",
         image: Banner2,
-        to: 'donat/transport'
+        to: 'donate/transport'
       }
     ],
     small: [
       {
         title: "На расслабоне на чилле",
         image: SmallBanner1,
-        to: 'donat/transport' 
+        to: 'donate/transport' 
       },
       {
         title: "Комфортный и быстрый",
         image: SmallBanner2,
-        to: 'donat/transport'
+        to: 'donate/transport'
       },
       {
         title: "В костюме с пакетом",
         image: SmallBanner3,
-        to: 'donat/transport'
+        to: 'donate/transport'
       }
     ]
   }

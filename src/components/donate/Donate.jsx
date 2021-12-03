@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { MAIN } from '../../constants/constants';
 import EmitWebView from '../../constants/events/emit-webView';
-import { donatRoutes } from '../../constants/routes';
+import { donateRoutes } from '../../constants/routes';
 import EventManager from '../../EventManager'
 import Navbar from '../navbar/Navbar'
 import NavbarHeader from '../navbar/NavbarHeader'
@@ -10,7 +10,7 @@ import NavbarContent from '../navbar/NavbarContent'
 import ButtonClose from '../../constants/buttons/ButtonClose/ButtonClose'
 import './less/main.less'
 
-class Donat extends Component {
+class Donate extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,12 +44,12 @@ class Donat extends Component {
       <BrowserRouter>
       <div className="main-container">
         <ButtonClose/>
-        <Navbar customClasses={['']} linksRoutes={donatRoutes}>
+        <Navbar customClasses={['']}>
           <NavbarHeader headerText={this._user.balance}/>
-          <NavbarContent linksRoutes={this.props.donutRoutes}/>
+          <NavbarContent linksRoutes={donateRoutes}/>
         </Navbar>
         <Switch>
-          {donatRoutes.map(({path, Component}) =>
+          {donateRoutes.map(({path, Component}) =>
             <Route key={path} path={path} component={Component} exact/>
           )}
           <Redirect to={MAIN}/>
@@ -60,4 +60,4 @@ class Donat extends Component {
   }
 }
 
-export default Donat;
+export default Donate;

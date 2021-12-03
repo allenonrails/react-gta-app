@@ -1,0 +1,33 @@
+.settings-slider{
+  position: relative;
+  width: 147px;
+  &__content {
+    position: relative;
+  }
+  &__left {
+    cursor: pointer;
+    position: absolute;
+    top: -6px;
+    left: 5px;
+  }
+  &__right {
+    cursor: pointer;
+    position: absolute;
+    top: -6px;
+    right: 5px;
+  }
+  &__slide{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease-out;
+    &-active {
+      opacity: 1;
+    }
+  }
+}
