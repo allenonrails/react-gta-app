@@ -1,5 +1,5 @@
 const EmitWebView = {
-  Donat             : 'WebView:Donat',
+  Donat             : 'WebView:Donate',
   History           : 'WebView:History',
   VirtualCurrency   : 'WebView:VirtualCurrency',
   Transport         : 'WebView:Transport',

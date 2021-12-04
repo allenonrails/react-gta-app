@@ -3,7 +3,7 @@ import Slider from '../../components/Slider';
 
 import './less/main.less';
 
-class Separatesetting extends Component {
+class SeparateSetting extends Component {
   render() {
     if (!this.props.active) return null
     if (this.props.dataSetting.data.hasOwnProperty('blocks')) {
@@ -60,4 +60,4 @@ class Separatesetting extends Component {
   }
 }
 
-export default Separatesetting;
+export default SeparateSetting;

@@ -33,7 +33,104 @@ class Appeals extends Component {
       "16548",
     ],
   }
-  
+
+  request = {
+    number: 11231,
+    messages: [
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      },
+      {
+        type: 'from',
+        name: 'Admin',
+        surname: 'Mask',
+        text: 'Попробуйте перезайти',
+        date: '07.08.2009'
+      },
+      {
+        type: 'to',
+        name: 'Вы',
+        text: 'Не могу купить дом,',
+        date: '07.08.2009'
+      }
+    ]
+  }
+
   render() {
     return (
       <div className="appeals">
@@ -58,187 +155,44 @@ class Appeals extends Component {
             <div className="appeals-chat__header">
               <h4 className="appeals-chat__title">
                 <img className="ticket" src={TicketSvg} alt={"TicketSvg"} />
-                ЗАПРОС №16548
+                ЗАПРОС №{this.request.number}
               </h4>
               <span className="appeals-chat__date">01.07.2020 | 21:00</span>
             </div>
             <div className="appeals-chat__content">
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__from chat-message">
-                <div className="chat-message__block">
-                  <h4 className="chat-message__from-title">
-                    Namename Namename
-                  </h4>
-                  <p className="chat-message__text">
-                    Попробуйте перезайти
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
-              <div className="appeals-chat__to chat-message">
-                <div className="chat-message__block-to">
-                  <h4 className="chat-message__to-title">
-                    Вы
-                  </h4>
-                  <p className="chat-message__text">
-                    Не могу купить дом
-                  </p>
-                </div>
-                <span className="chat-message__date">01.07.2020 | 21:01</span>
-              </div>
+
+              {this.request.messages.map(message => {
+                switch (message.type) {
+                  case 'from':
+                    return (
+                      <div className="appeals-chat__from chat-message">
+                        <div className="chat-message__block">
+                          <h4 className="chat-message__from-title">
+                            {message.name} {message.surname} 
+                          </h4>
+                          <p className="chat-message__text">
+                            {message.text}
+                          </p>
+                        </div>
+                        <span className="chat-message__date">{message.date}</span>
+                      </div>
+                    )
+                  case 'to':
+                    return (
+                      <div className="appeals-chat__to chat-message">
+                        <div className="chat-message__block-to">
+                          <h4 className="chat-message__to-title">
+                            {message.name}
+                          </h4>
+                          <p className="chat-message__text">
+                            {message.text}
+                          </p>
+                        </div>
+                        <span className="chat-message__date">{message.date}</span>
+                      </div>
+                    )
+                }
+              })}
             </div>
             <div className="appeals-chat__input-block">
               <input placeholder="Введите сообщение..." type="text" className="appeals-chat__input" />
