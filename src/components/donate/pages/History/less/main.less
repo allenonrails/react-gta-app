@@ -22,6 +22,16 @@
   table-layout: fixed;
   color: #fff;
   font-size: 18px;
+  &__title {
+    text-align: center;
+    width: 150px
+  }
+  &-scrollbar{
+    width: 1033px;
+    height: 615px;
+    overflow: scroll;
+    scrollbar-color: #FF2D17 transparent;
+  }
   &__header {
     width: 500%;
     background-color: #151618;
@@ -37,17 +47,14 @@
     margin-top: 30px;
     display: flex;
     text-align: center;
-    justify-content: space-between;
   }
   &__item{
+    width: 150px;
     margin-left: 60px;
-    width: 2%;
-    display: block;
-    flex-grow: 1;
-
     &:nth-child(2){
       font-weight: 700;
     }
+    
   }
 }
 

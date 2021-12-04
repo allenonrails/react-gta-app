@@ -30,7 +30,7 @@ class Tabs extends Component {
               {rowTitle}
             </button>
           )}
-        </div>
+        </div> 
         <div className="tabs">
           {Object.values(this.props.data).map((dataHash, i) =>
             <div 
