@@ -32,21 +32,25 @@
   }
   // items
   &__item {
-    padding: 14px 0;
     list-style: none;
     transition: .6s ease-in-out;
     &-active {
-      background-color: #FF3929;
+      .navbar__link{
+        background-color: #FF3929;
+      }
     }
     &:hover {
-      background-color: #d82114;
+      .navbar__link{
+        background-color: #d82114;;
+      }
     }
   }
   
   &__link {
+    padding: 14px 0;
     display: block;
-    max-width: 150px;
-    margin-left: 38px;
+    max-width: 290px;
+    padding-left: 38px;
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 500;
