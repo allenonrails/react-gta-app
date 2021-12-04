@@ -29,6 +29,7 @@ class Property extends Component {
   ]
 
   btnClickEvent = (e) => {
+    console.log(e)
     this.setState({
       active: +e.target.dataset.id
     })

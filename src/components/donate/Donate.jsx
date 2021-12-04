@@ -14,7 +14,7 @@ class Donate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true,
+      show: false,
       path: '/donat'
     }
   }
