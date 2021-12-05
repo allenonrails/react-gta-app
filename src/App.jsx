@@ -5,6 +5,7 @@ import './main-styles/main.less';
 import './main-styles/adaptive.less';
 import Profile from './components/profile/Profile';
 import CarShowroom from './components/car_showroom/CarShowroom';
+import Rent from './components/car_rent/Rent';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Donate />
         <Profile />
         <CarShowroom /> 
+        <Rent />
       </div>
     </React.Fragment>
 

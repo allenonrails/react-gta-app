@@ -1,0 +1,44 @@
+.rent {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1620px;
+  height: 780px;
+  padding: 30px 36px;
+  background: #121214;
+  border-radius: 5px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 26px;
+    color: #fff;
+  }
+  &__btn {
+    cursor: pointer;
+    border: 0;
+    padding: 17px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #151618;
+    color: #fff;
+    transition: .5s ease-in-out;
+    &:hover {
+      background-color: darken(#151618, 3%);
+    }
+  }
+  &__wrap {
+    scrollbar-color: #FF2D17 transparent;
+    padding: 0 30px;
+    margin-top: 30px;
+    overflow: scroll;
+    height: 690px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

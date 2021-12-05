@@ -10,8 +10,7 @@ class CarShowroom extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true,
-      path: '/car_showroom',
+      show: false,
       activeCar: 0,
       activeColor: 2
     }
@@ -317,6 +316,7 @@ class CarShowroom extends Component {
   }
 
   render() {
+    if (!this.state.show) return null;
     let activeCar = this.carsData[Object.keys(this.carsData)[this.state.activeCar]];
     return (
       <div className="car-showroom">
