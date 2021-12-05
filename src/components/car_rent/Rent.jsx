@@ -9,7 +9,7 @@ class Rent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true,
+      show: false,
       activeCar: 0,
       activeColor: 2
     }
@@ -70,6 +70,7 @@ class Rent extends Component {
   ]
 
   render() {
+    if(!this.state.show) return null
     return (
       <div className="rent">
         <div className="rent__header">
