@@ -1,0 +1,139 @@
+.shop {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background: #000000;
+  padding: 0 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__card {
+    margin-top: 121px;
+    width: 525px;
+    height: 905px;
+    background: linear-gradient(0deg, #121214, #121214), #121214;
+    border-radius: 5px;
+  }
+
+  &__description {
+    margin-bottom: 87px;
+    color: #fff;
+  }
+
+  &__btn {
+    cursor: pointer;
+    display: block;
+    width: 250px;
+    height: 75px;
+    background-color: rgba(255, 57, 41, 0.6);
+    border: 1px solid #FF3929;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    transition: .5s ease-in-out;
+    &:hover {
+      background-color: rgba(255, 57, 41, 1);
+    }
+  }
+
+  &__price {
+    margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 88.4%;
+  }
+
+  &-card {
+    padding: 33px 17px;
+    color: #fff;
+
+    &__btn-back {
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      border: 0;
+      margin-top: 100px;
+      width: 135px;
+      height: 60px;
+
+      background: linear-gradient(0deg, #151618, #151618), #121214;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+
+      &:hover {
+        background: linear-gradient(0deg, #121213, #121213), #121213;
+      }
+    }
+
+    &__list {
+      overflow: scroll;
+      height: 420px;
+      scrollbar-color: #FF2D17 transparent;
+    }
+
+    &__header {
+      width: 490px;
+      height: 150px;
+      margin: 0 auto;
+      background: linear-gradient(0deg, #151618, #151618), #121214;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 490px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+      margin-top: 34px;
+      margin-bottom: 46px;
+      font-size: 24px;
+    }
+  }
+
+  &-block {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 16px 18px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+
+    &:hover,
+    &-active {
+      background-color: #FF3929;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &__help-text {
+      margin-top: 17px;
+      font-size: 14px;
+      color: #484848;
+      font-weight: 700;
+    }
+
+    &__discount {
+      font-size: 12px;
+      padding: 15px 23px;
+      background: rgba(200, 101, 101, 0.8);
+      border: 1px solid #C6655D;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+  }
+}

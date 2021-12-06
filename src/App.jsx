@@ -9,6 +9,7 @@ import Rent from './components/car-rent/Rent';
 import Inventory from './components/inventory/Inventory';
 import Registration from './components/authentication/Registration';
 import Login from './components/authentication/Login';
+import Shop from './components/shop/Shop';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
 
         <Registration />
         <Login />
+
+        <Shop />
       </div>
     </React.Fragment>
 
