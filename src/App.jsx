@@ -5,7 +5,7 @@ import './main-styles/main.less';
 import './main-styles/adaptive.less';
 import Profile from './components/profile/Profile';
 import CarShowroom from './components/car_showroom/CarShowroom';
-import Rent from './components/car_rent/Rent';
+import Rent from './components/car-rent/Rent';
 import Inventory from './components/inventory/Inventory';
 
 function App() {

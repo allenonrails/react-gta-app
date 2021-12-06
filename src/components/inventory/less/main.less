@@ -47,8 +47,6 @@
   }
 
   &__card {
-    overflow: scroll;
-    scrollbar-color: transparent transparent;
     width: 440px;
     height: 950px;
     background: #151618;
@@ -123,6 +121,10 @@
 
     &__list {
       margin-top: 54px;
+      height: 706px;
+      padding-right: 15px;
+      overflow: scroll;
+      scrollbar-color: #FF2D17 transparent;
     }
   }
 
@@ -202,4 +204,8 @@
       flex-grow: 1;
     }
   }
+}
+
+.none {
+  display: none;
 }

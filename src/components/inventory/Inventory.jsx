@@ -33,10 +33,13 @@ import CrossSvg from '../../images/inventory/cross.svg'
 
 export default class Inventory extends Component {
   state = {
-    show: true
+    show: true,
+    username: 'Nika Kondr'
   }
 
-  trunk = {
+  inventory = {
+    current: 290,
+    max: 1000,
     items: [
       {
         image: BagImg,
@@ -161,159 +164,290 @@ export default class Inventory extends Component {
     ]
   }
 
-  weapons = [
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    }, {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-    {
-      image: GunImg,
-      title: 'Товар',
-      model: 'AR-39393',
-      count: 5
-    },
-  ]
+  trunk = {
+    view: 'none',
+    current: 322,
+    max: 1000,
+    items: [
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: BagImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+    ]
+  }
+
+  weapons = {
+    view: 'none',
+    items: [
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      }, {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+      {
+        image: GunImg,
+        title: 'Товар',
+        model: 'AR-39393',
+        count: 5
+      },
+    ]
+  }
 
   render() {
     if (!this.state.show) return null
     return (
       <div className="inventory">
-        <div className="inventory__card inventory-card">
+        <div className={`inventory__card inventory-card ${this.weapons.view}`}>
           <div className="inventory-card__header">
-            <span className="inventory-card__count">180/1000k</span>
+            <span className="inventory-card__count">{this.trunk.current}/{this.trunk.max}k</span>
             <h2 className="inventory-card__title">Багажник</h2>
           </div>
           <div className="inventory-card__list">
@@ -331,13 +465,13 @@ export default class Inventory extends Component {
             )}
           </div>
         </div>
-        <div className="inventory__card inventory-card inventory-card-weapons">
+        <div className={`inventory__card inventory-card inventory-card-weapons ${this.weapons.view}`}>
           <div className="weapon-cross">
             <img src={CrossSvg} alt={"CrossSvg"} />
           </div>
           <h2 className="inventory-card__title">Оружие</h2>
-          <div className="inventory-card__list inventory-card__list-weapons">
-            {this.weapons.map(({ image, title, model, count }) =>
+          <div className='inventory-card__list inventory-card__list-weapons'>
+            {this.weapons.items.map(({ image, title, model, count }) =>
               <div className="inventory-card__item inventory-item inventory-item-reverse">
                 <div className="inventory-item__image">
                   <img src={image} alt={"image"} />
@@ -362,7 +496,7 @@ export default class Inventory extends Component {
           </div>
         </div>
         <div className="inventory__card inventory-card">
-          <h2 className="inventory-card__title">Nika Kondr</h2>
+          <h2 className="inventory-card__title">{this.state.username}</h2>
           <div className="inventory-card__list inventory-cols">
             <div className="inventory-col">
               <img src={Icon1} alt="{Icon1}" /><img src={Icon2} alt="{Icon2}" /><img src={Icon3} alt="{Icon3}" /><img src={Icon4} alt="{Icon4}" /><img src={Icon5} alt="{Icon5}" /><img src={Icon6} alt="{Icon6}" />
@@ -388,11 +522,11 @@ export default class Inventory extends Component {
         </div>
         <div className="inventory__card inventory-card">
           <div className="inventory-card__header">
-            <span className="inventory-card__count">180/1000k</span>
+            <span className="inventory-card__count">{this.inventory.current}/{this.inventory.max}k</span>
             <h2 className="inventory-card__title">Инвентарь</h2>
           </div>
           <div className="inventory-card__list">
-            {this.trunk.items.map(({ image, title, model, count }) =>
+            {this.inventory.items.map(({ image, title, model, count }) =>
               <div className="inventory-card__item inventory-item">
                 <div className="inventory-item__image">
                   <img src={image} alt={"image"} />
