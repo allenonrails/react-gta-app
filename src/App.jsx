@@ -7,6 +7,8 @@ import Profile from './components/profile/Profile';
 import CarShowroom from './components/car-showroom/CarShowroom';
 import Rent from './components/car-rent/Rent';
 import Inventory from './components/inventory/Inventory';
+import Registration from './components/authentication/Registration';
+import Login from './components/authentication/Login';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         <CarShowroom /> 
         <Rent />
         <Inventory />
+
+        <Registration />
+        <Login />
       </div>
     </React.Fragment>
 

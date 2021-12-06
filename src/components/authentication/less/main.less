@@ -1,0 +1,105 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 618px;
+  height: 727px;
+  background-image: url(../images/bgForm.png);
+  background-color: #252525;
+  &__header {
+    margin-top: 7px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__logo img {
+    margin: 0 auto;
+  }
+
+  &__description {
+    margin: 0 auto;
+    margin-top: 7px;
+    width: 302px;
+    font-size: 14px;
+  }
+
+  &__content {
+    margin-top: 48px;
+    color: #fff;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+
+  &__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    width: 395px;
+    height: 50px;
+    background: #121214;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: 0;
+    padding: 17px 16px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    &::placeholder {
+      color: #595959;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    height: 35px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    &-create {
+      margin-top: 43px;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #FF3621 0%, #FF574D 100%);
+      &:hover {
+        background: linear-gradient(90deg, #f51800 0%, #ff3a30 100%);
+      }
+    }
+    &-back {
+      background: linear-gradient(90deg, #2C2C2C 0%, #4B4B4B 100%);
+      &:hover {
+        background: linear-gradient(90deg, #1b1b1b 0%, #222020 100%);
+      }
+    }
+  }
+  &__block {
+    margin: 0 auto;
+    margin-bottom: 14px;
+    width: 395px;
+    height: 50px;
+    position: relative;
+    img {
+      cursor: pointer;
+      position: absolute;
+      right: 16px;
+      top: 15px;
+    }
+  }
+  fieldset {
+    border: 0;
+  }
+  .login-input {
+    font-size: 12px;
+  }
+}
