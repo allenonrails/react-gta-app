@@ -1,0 +1,215 @@
+.character-main-stage {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+
+  &__btn {
+    padding: 0 17px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #151618;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken(#151618, 3%);
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 0 170px;
+    margin-bottom: 174px;
+  }
+
+  &__card {
+    width: 250px;
+    text-align: center;
+  }
+
+  .character-card {
+    &__title {
+      margin-bottom: 34px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__hours,
+    &__balance {
+      font-weight: 700;
+      position: relative;
+      text-align: center;
+      margin: 15px 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #151618;
+    }
+
+    &__btn {
+      margin-top: 44px;
+      border: 0;
+      width: 120px;
+      height: 50px;
+      background-color: #151618;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 700;
+      color: #fff;
+      transition: .4s ease-in-out;
+
+      &:hover {
+        background-color: darken(#151618, 3%);
+      }
+    }
+  }
+}
+
+.step-form {
+  top: 155px;
+  right: 20px;
+  position: absolute;
+  width: 537px;
+  height: 770px;
+  background-color: #252525;
+  background-image: url(../images/bgForm.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+
+  &__step {
+    font-size: 12px;
+    margin-top: 46px;
+    margin-bottom: 26px;
+  }
+
+  &__help {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__input {
+    outline: none;
+    color: #FFF;
+    padding-left: 17px;
+    width: 370px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 0;
+    background: #121214;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+
+    &::placeholder {
+      color: #6D6D6D;
+    }
+  }
+
+  &__slider {
+    font-size: 14px;
+  }
+
+  &__slider-help {
+    width: 412px;
+    margin: 0 auto;
+    margin-top: 28px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #585858;
+  }
+
+  &__buttons {
+    max-width: 420px;
+    margin: 0 auto;
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    background-color: #121214;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.5));
+
+    &:hover {
+      background-color: darken(#121214, 4%);
+    }
+  }
+
+  &-sex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__slider {
+      margin-bottom: 23px;
+    }
+
+    &__sex {
+      cursor: pointer;
+      margin: 0 auto;
+      margin-bottom: 53px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      color: #6D6D6D;
+      width: 120px;
+      height: 120px;
+      background: #121214;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+
+      &-active,
+      &:hover {
+        color: #FFF;
+        font-weight: 700;
+        background: linear-gradient(270deg, #FF4539 0%, #FF2D17 100%);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &__block {
+      font-size: 13px;
+
+      &:first-child {
+        margin-right: 66px;
+      }
+    }
+  }
+}
+
+.step-help-text {
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+}

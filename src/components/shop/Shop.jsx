@@ -5,7 +5,7 @@ import ShopLogo from '../../images/shopLogo.png';
 import './less/main.less'
 class Shop extends Component {
   state = {
-    show: true,
+    show: false,
     active: 2
   }
 
