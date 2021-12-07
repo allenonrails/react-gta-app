@@ -11,6 +11,7 @@ import Registration from './components/authentication/Registration';
 import Login from './components/authentication/Login';
 import Shop from './components/shop/Shop';
 import CharacterCreation from './components/character-creation/CharacterCreation';
+import WeaponShop from './components/weapon-shop/WeaponShop';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Shop />
 
         <CharacterCreation />
+
+        <WeaponShop />
       </div>
     </React.Fragment>
 
