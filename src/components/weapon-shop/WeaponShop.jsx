@@ -7,7 +7,7 @@ import CardImage from '../../images/weaponImage.png'
 
 class WeaponShop extends Component {
   state = {
-    show: true,
+    show: false,
     activeCategory: 0,
     activeCard: 0
   }

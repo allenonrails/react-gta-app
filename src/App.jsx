@@ -12,6 +12,9 @@ import Login from './components/authentication/Login';
 import Shop from './components/shop/Shop';
 import CharacterCreation from './components/character-creation/CharacterCreation';
 import WeaponShop from './components/weapon-shop/WeaponShop';
+import DialogWithNpc from './components/modals/DialogWithNpc';
+import Notification from './components/modals/Notification';
+import Message from './components/modals/Message';
 
 function App() {
   return (
@@ -31,6 +34,10 @@ function App() {
         <CharacterCreation />
 
         <WeaponShop />
+
+        <DialogWithNpc />
+        <Notification/>
+        <Message/>
       </div>
     </React.Fragment>
 
