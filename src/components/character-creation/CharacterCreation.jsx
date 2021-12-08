@@ -8,7 +8,7 @@ import StepForm from './Stages/StepForm';
 
 class CharacterCreation extends Component {
   state = {
-    show: false
+    show: true
   }
   render() {
     if(!this.state.show) return null

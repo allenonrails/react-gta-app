@@ -93,7 +93,17 @@
     font-size: 14px;
     height: 303px;
     overflow: scroll;
-    scrollbar-color: #FF2D17 transparent;
+        &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
     margin-top: 37px;
     &__wrap {
       display: flex;

@@ -1,6 +1,16 @@
 .settings-separate {
   overflow: scroll;
-  scrollbar-color: #FF2D17 transparent;
+      &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
   height: 574px;
   display: flex;
   flex-wrap: wrap;

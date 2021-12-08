@@ -13,7 +13,17 @@
     &__list {
       height: 555px;
       overflow: scroll;
-      scrollbar-color: #FF2D17 transparent;
+          &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
       margin-top: 16px;
       width: 266px;
     }
@@ -63,7 +73,17 @@
     }
     .appeals-chat {
       overflow: scroll;
-      scrollbar-color: #FF2D17 transparent;
+          &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
       padding: 0 21px;
       width: 654px;
       &__input-block {

@@ -30,7 +30,17 @@
     width: 1033px;
     height: 615px;
     overflow: scroll;
-    scrollbar-color: #FF2D17 transparent;
+        &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
   }
   &__header {
     width: 500%;

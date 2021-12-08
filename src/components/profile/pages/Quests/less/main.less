@@ -5,7 +5,17 @@
     overflow-x: scroll;
     display: flex;
     align-items: center;
-    scrollbar-color: #FF2D17 transparent;
+        &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
   }
   &__tab-name{
     flex-grow: 1;
@@ -68,7 +78,17 @@
     &__missions {
       height: 400px;
       overflow: scroll;
-      scrollbar-color: #FF2D17 transparent;
+          &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
     }
     &__block {
       display: flex;

@@ -1,37 +1,15 @@
 import React, { Component } from 'react';
 import FormHeader from './FormHeader';
 
-import './less/main.less'
-import EyeOpened from '../../images/eye_open.svg'
-import EyeClosed from '../../images/eye_closed.svg'
+import Input from './Input'
 
+import './less/main.less'
 class Registration extends Component {
   state = {
     show: false,
     type: 'password',
   }
 
-  handleClick = () => this.setState(({type}) => ({
-    type: type === 'text' ? 'password' : 'text'
-  }))
-
-  showPassword = (e) => {
-    if (e.target.src == EyeOpened) {
-      let type = 'text';
-      this.setState(({
-        type
-      }))
-      e.target.src = EyeClosed
-      e.target.style.top = '22px'
-    } else {
-      let type = 'password';
-      this.setState(({
-        type
-      }))
-      e.target.src = EyeOpened
-      e.target.style.top = '15px'
-    }
-  }
   render() {
     if(!this.state.show) return null
     return (
@@ -46,14 +24,8 @@ class Registration extends Component {
             <input 
               placeholder="Введите ваш email"
               className="form__input"></input>
-            <div className="form__block">
-              <input type={this.state.type}  placeholder="Придумайте сложный пароль" className="form__input"></input>
-              <img onClick={this.showPassword} src={EyeOpened} alt={"EyeOpened"} />
-            </div>
-            <div className="form__block">
-              <input type={this.state.type} placeholder="Повторите пароль" className="form__input"></input>
-              <img onClick={this.showPassword} src={EyeOpened} alt={"EyeOpened"} />
-            </div>
+            <Input placeholder="Придумайте сложный пароль"/>
+            <Input placeholder="Повторите пароль"/>
             <button className="form__btn form__btn-create">Создать аккаунт</button>
             <button className="form__btn form__btn-back">Назад</button>
           </fieldset>

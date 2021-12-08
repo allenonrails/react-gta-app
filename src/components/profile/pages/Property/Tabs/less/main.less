@@ -3,7 +3,17 @@
     margin-top: 42px;
     height: 559px;
     overflow: scroll;
-    scrollbar-color: #FF2D17 transparent;
+        &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
     color: #FFF;
     padding: 20px 28px;
     width: 865px;

@@ -13,7 +13,17 @@
     width: 450px;
     height: 978px;
     overflow: scroll;
-    scrollbar-color: #FF2D17 transparent;
+        &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
     padding: 29px 26px 34px 25px;
 
     .car {

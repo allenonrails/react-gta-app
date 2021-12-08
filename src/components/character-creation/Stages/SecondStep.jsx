@@ -3,8 +3,19 @@ import Slider from '../components/Slider/Slider';
 
 class SecondStep extends Component {
   state = {
-    show: true,
+    show: false,
     active: 1
+  }
+  createStepsForSlides = () => {
+    let nums = [];
+    for (let i = 1; i != 101; i++) {
+      nums.push(i)
+    }
+    nums = nums.map(function (num) {
+      return `${num}%`
+    })
+
+    return nums
   }
 
   data = {
@@ -23,10 +34,7 @@ class SecondStep extends Component {
           },
           {
             title: 'Сходство',
-            slides: [
-              "50%",
-              "100%"
-            ]
+            slides: this.createStepsForSlides()
           }
         ]
       },
@@ -42,15 +50,13 @@ class SecondStep extends Component {
           },
           {
             title: 'Сходство',
-            slides: [
-              "50%",
-              "100%"
-            ]
+              slides: this.createStepsForSlides()
           }
         ]
       }
     ]
   }
+
 
   btnClickEvent = (e) => {
     this.setState({
@@ -72,7 +78,7 @@ class SecondStep extends Component {
           <div className="step-form__sex step-form-sex">
             {this.data.sex.map(({ sex, sliders }, index) =>
               <div className="step-form-sex__block">
-                <div 
+                <div
                   data-index={index}
                   onClick={this.btnClickEvent}
                   className={index === this.state.active ? 'step-form-sex__sex step-form-sex__sex-active' : 'step-form-sex__sex'}>
@@ -84,7 +90,7 @@ class SecondStep extends Component {
                       {title}
                     </h3>
                     <Slider
-                      activeSlide={0}
+                      activeSlide={49}
                       width={160}
                       slides={slides}
                     />
@@ -94,7 +100,7 @@ class SecondStep extends Component {
             )}
             <div className="step-form-sex__block"></div>
           </div>
-          <div className="step-form__buttons" style={{marginTop: '200px'}}>
+          <div className="step-form__buttons" style={{ marginTop: '200px' }}>
             <button className="step-form__btn">Рандом</button>
             <button className="step-form__btn">Сбор</button>
             <button className="step-form__btn">Далее</button>

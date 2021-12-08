@@ -56,7 +56,17 @@ input:checked + .slider:before {
 .main-settings {
   height: 570px;
   overflow: scroll;
-  scrollbar-color: #FF2D17 transparent;
+      &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FF2D17;
+      border-radius: 10px;
+    }
   &__block {
     color: #fff;
     font-size: 14px;

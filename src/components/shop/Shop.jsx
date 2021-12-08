@@ -6,7 +6,7 @@ import './less/main.less'
 class Shop extends Component {
   state = {
     show: false,
-    active: 2
+    active: -1
   }
 
   data = [
@@ -116,7 +116,6 @@ class Shop extends Component {
 
   render() {
     if (!this.state.show) return null;
-    let activeCardPrice = this.data[Object.keys(this.data)[this.state.active]].price;
     return (
       <div className="shop">
         <div className="shop__card shop-card">
@@ -152,17 +151,19 @@ class Shop extends Component {
             Назад
           </button>
         </div>
-        <div className="shop__description">
-          <h3 className="shop__price">
-            Цена: {activeCardPrice}
-          </h3>
-          <button className="shop__btn">
-            Оплата наличкой
-          </button>
-          <button className="shop__btn">
-            Оплата картой
-          </button>
-        </div>
+        {this.state.active >= 0 &&
+          <div className="shop__description">
+            <h3 className="shop__price">
+              Цена: {this.data[Object.keys(this.data)[this.state.active]].price}
+            </h3>
+            <button className="shop__btn">
+              Оплата наличкой
+            </button>
+            <button className="shop__btn">
+              Оплата картой
+            </button>
+          </div>
+        }
       </div>
     );
   }

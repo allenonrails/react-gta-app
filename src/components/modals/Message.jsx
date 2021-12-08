@@ -4,14 +4,18 @@ import './main.less'
 
 class Message extends Component {
   state = {
-    show: true
+    show: false
+  }
+
+  data ={
+    title: 'А может и не может'
   }
   render() {
     if (!this.state.show) return null
     return (
       <div className="modal-message">
         <h2 className="modal-message__title">
-          А может и не может
+          {this.data.title}
         </h2>
         <div className="modal-message__wrap">
           <input type="text" className="modal-message__input" />
