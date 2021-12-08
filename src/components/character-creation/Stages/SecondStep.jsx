@@ -3,7 +3,7 @@ import Slider from '../components/Slider/Slider';
 
 class SecondStep extends Component {
   state = {
-    show: false,
+    show: true,
     active: 1
   }
   createStepsForSlides = () => {

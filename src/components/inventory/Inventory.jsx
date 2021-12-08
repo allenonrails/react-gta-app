@@ -33,7 +33,7 @@ import CrossSvg from '../../images/inventory/cross.svg'
 
 export default class Inventory extends Component {
   state = {
-    show: false,
+    show: true,
     username: 'Nika Kondr'
   }
 
@@ -497,7 +497,7 @@ export default class Inventory extends Component {
         </div>
         <div className="inventory__card inventory-card">
           <h2 className="inventory-card__title">{this.state.username}</h2>
-          <div className="inventory-card__list inventory-cols">
+          <div className="inventory-cols">
             <div className="inventory-col">
               <img src={Icon1} alt="{Icon1}" /><img src={Icon2} alt="{Icon2}" /><img src={Icon3} alt="{Icon3}" /><img src={Icon4} alt="{Icon4}" /><img src={Icon5} alt="{Icon5}" /><img src={Icon6} alt="{Icon6}" />
             </div>

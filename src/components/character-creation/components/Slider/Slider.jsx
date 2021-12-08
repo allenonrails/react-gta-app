@@ -7,7 +7,15 @@ import RightSvg from '../../../../images/right.svg'
 
 class Slider extends Component {
   state = {
-    activeSlide: this.props.activeSlide
+    activeSlide: this.activeSlideCorrect()
+  }
+
+  activeSlideCorrect(){
+    if(this.props.activeSlide < this.props.slides.length) {
+      return this.props.activeSlide
+    }else{
+      return 0
+    }
   }
 
   nextSlide = () => {

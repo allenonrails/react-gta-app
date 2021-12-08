@@ -6,7 +6,7 @@ import crossSvg from '../../images/inventory/cross.svg'
 
 class Notification extends Component {
   state = {
-    show: true
+    show: false
   }
   data = {
     text: `          
